@@ -3,7 +3,7 @@ using namespace std;
 
 class Node
 {
-    public:
+public:
     int info;
     Node *lefthild;
     Node *rightchild;
@@ -11,8 +11,16 @@ class Node
     // Constuktor
     Node()
     {
-        lefthild = nullptr; // Initaliaze     left child to null
+        lefthild = nullptr;   // Initaliaze     left child to null
         rightchild = nullptr; // Initaliaze right child to null
-
     }
 };
+class BinaryTree
+{
+public:
+    Node *ROOT;
+    BinaryTree()
+    {
+        ROOT = nullptr; // Initalizing Root to Null
+    }
+}
