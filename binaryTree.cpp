@@ -23,4 +23,20 @@ public:
     {
         ROOT = nullptr; // Initalizing Root to Null
     }
+    void search(int element, Node *&parent, Node *&currentNode)
+    {
+        // This funcion searchas the currrentNode fo the specified Node as well as the curren
+        currentNode = ROOT;
+        parent = nullptr;
+        while ((currentNode != nullptr) && (currentNode->info != element))
+        {
+            parent = currentNode;
+            if (element < currentNode->info)
+                currentNode = currentNode->lefthild;
+            else
+                currentNode = currentNode->rightchild;
+        }
+    }
+
+
 }
