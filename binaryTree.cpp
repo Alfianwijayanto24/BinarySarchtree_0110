@@ -69,5 +69,14 @@ void insert()
         return;
     }
 
+    // setep 6: if teh value in the data field of new node id less them that of parent
+    if (x < parent->info)
+    {
+        // 6a: make the left child of parent point to the new node
+        parent->lefthild = newNode;
+        // 6b: exit
+        return;
+    }
+
 }
 };
