@@ -78,5 +78,14 @@ void insert()
         return;
     }
 
+    // setep 7 : if the value in teh data field of the new node is gereate then that of the
+    else if (x > parent->info)
+    {
+        // 7:make the right child of parent point the new node
+        parent->rightchild = newNode;
+        // 7b:exit
+        return;
+    }
 }
+
 };
