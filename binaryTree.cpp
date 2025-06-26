@@ -94,4 +94,18 @@ bool isEmpty()
     return ROOT == nullptr;
 }
 
+void inorder(Node *ptr)
+{
+    if (isEmpty())
+    {
+        cout << "Tree id empty " << endl;
+        return;
+    }
+    if (ptr == nullptr)
+        return;
+
+    inorder(ptr->lefthild);
+    cout << ptr->info << " "; // parent
+    inorder(ptr->rightchild);
+}
 };
