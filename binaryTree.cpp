@@ -48,5 +48,8 @@ void insert()
     // Step 1: Allocate memory for the new node
     Node *newNode = new Node();
 
+    // step 2: Assing value to teh data field of node
+    newNode->info = x;
+
 }
 };
