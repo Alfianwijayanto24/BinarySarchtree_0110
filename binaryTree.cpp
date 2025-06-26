@@ -55,5 +55,10 @@ void insert()
     newNode->lefthild = nullptr;
     newNode->rightchild = nullptr;
 
+    // dtep 4: Locate the node wicht will be the parent of the node to be insertd
+    Node *parent = nullptr;
+    Node *currentNode = nullptr;
+    search(x, parent, currentNode);
+
 }
 };
