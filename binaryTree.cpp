@@ -51,5 +51,9 @@ void insert()
     // step 2: Assing value to teh data field of node
     newNode->info = x;
 
+    // setp 3 : Make the left and right child of the new node point to NULL
+    newNode->lefthild = nullptr;
+    newNode->rightchild = nullptr;
+
 }
 };
